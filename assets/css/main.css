@@ -618,22 +618,8 @@ input, select, textarea {
 		top: 0;
 		left: 0;
 		width: 100%;
-		background-color: #92c8ff5c;
+		background-color: #3c758bd0;
 		padding: 10px;
-		box-sizing: border-box;
-		border-bottom: 1px solid #ccc;
-		z-index: 9999;
-	  }
-
-	  .barre2 {
-		position: fixed;
-		top: 0;
-		left: 0;
-		margin-top: 2.80rem;
-		width: 40px;
-		height: 100%;
-		background-color: #92c8ff5c;
-		padding-right: 10px;
 		box-sizing: border-box;
 		border-bottom: 1px solid #ccc;
 		z-index: 9999;
