@@ -1,0 +1,176 @@
+#veille-technologique {
+    padding: 2rem 5rem;
+    margin: 2rem 0;
+    border-radius: 1rem;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 300;
+    
+    @media screen and (max-width: 768px) {
+      padding: 2rem 3rem;
+    }
+  
+    @media screen and (max-width: 576px) {
+      padding: 2rem 1.5rem;
+    }
+  
+    .veille {
+      background-color: blue;
+      border-radius: 1rem;
+  
+  
+      .strong {
+        font-weight: 500;
+      }
+  
+      .italic {
+        font-style: italic;
+      }
+  
+      a {
+        color: white;
+        font-weight: 700;
+        text-decoration: underline;
+      }
+  
+      h3 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+      }
+  
+      .veille-intro {
+        margin-bottom: 4rem;
+  
+        p {
+          margin-bottom: 1rem;
+        }
+      }
+  
+      .veille-outils {
+        margin-bottom: 4rem;
+  
+        h3 {
+          margin-bottom: 1rem;
+        }
+      }
+  
+      .article-veille {
+        margin: 7rem auto;
+        text-align: justify;
+        text-justify: inter-word;
+        width: 90%;
+        @media screen and (min-width: 768px) {
+          min-width: 600px;
+          }
+  
+        .article-veille-item {
+          background-color: blueSecondary;
+          padding: 0;
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-areas: "article-veille-left" "article-veille-right";
+          grid-auto-rows: 50fr 100fr;
+          text-decoration: none;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          border-radius: 1rem;
+          width: 100%;
+          max-width: 900px;
+          margin: 2rem auto 2rem auto;
+          transition: transform 0.3s ease;
+          
+          @media screen and (min-width: 768px) {
+            grid-template-columns: 1fr 30%;
+            grid-template-areas: "article-veille-right article-veille-left";
+            min-width: 600px;
+            grid-auto-rows: auto;
+            width: 90%;
+          }
+          
+          &:hover {
+            
+            transform: scale(1.03);
+          }
+  
+          &:active {
+            
+            transform: scale(1.03);
+          }
+  
+  
+          .article-veille-right {
+            grid-area: article-veille-right;
+            font-size: 0.85rem;
+            padding: 0 2rem;
+  
+            .article-veille-link-item {
+              padding: 1rem 0;
+              display: grid;
+              grid-template-areas: "article-veille-title" "article-veille-link-description" "article-veille-details";
+              grid-template-columns: 1fr;
+            }
+
+              h5 {
+                grid-area: article-veille-title;
+                font-size: 0.95rem;
+                font-weight: 700;
+                display: flex;
+                align-items: center;
+                margin: 0;
+                padding: 1rem 0.5rem;
+              }
+  
+              .article-veille-link-description {
+                padding: 1rem 0;
+                display: flex;
+                align-items: center;
+                grid-area: article-veille-link-description;
+                text-overflow: ellipsis;
+  
+                p {
+                  text-overflow: ellipsis;
+                  font-weight: 300;
+                  display: -webkit-box;
+                  -webkit-line-clamp: 4;
+                  -webkit-box-orient: vertical;
+                  overflow: hidden;
+                  margin: 0;
+  
+                }
+              }
+  
+              .article-veille-link-footer {
+                grid-area: article-veille-details;
+                display: flex;
+                align-items: center;
+                font-size: 0.8rem;
+                font-weight: 500;
+                color: lightGray;
+                margin: 0 0 0 0.5rem;
+              }
+            }
+          }
+  
+          .article-veille-left {
+            grid-area: article-veille-left;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+              background-image: url("https://picsum.photos/200/300");
+              background-size: cover;
+              background-position: center;
+              background-repeat: no-repeat;
+  
+  
+  
+            img {
+            height: 100%;
+            width: auto;
+            object-fit: cover;
+            }
+          }
+        }
+      }
+    }
+  
