@@ -1,9 +1,3 @@
-/*
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 (function($) {
 
 	var	$window = $(window),
@@ -13,6 +7,8 @@
 		$footer = $('#footer'),
 		$main = $('#main'),
 		$main_articles = $main.children('article');
+		picture = $('.picture')
+		title = $('.title')
 
 	// Breakpoints.
 		breakpoints({
@@ -57,14 +53,6 @@
 		var $nav = $header.children('nav'),
 			$nav_li = $nav.find('li');
 
-		// Add "middle" alignment classes if we're dealing with an even number of items.
-			if ($nav_li.length % 2 == 0) {
-
-				$nav.addClass('use-middle');
-				$nav_li.eq( ($nav_li.length / 2) ).addClass('is-middle');
-
-			}
-
 	// Main.
 		var	delay = 325,
 			locked = false;
@@ -95,6 +83,8 @@
 							// Hide header, footer.
 								$header.hide();
 								$footer.hide();
+								picture.hide();
+    							title.hide();
 
 							// Show main, article.
 								$main.show();
@@ -169,6 +159,8 @@
 								// Hide header, footer.
 									$header.hide();
 									$footer.hide();
+									picture.hide();
+    								title.hide();
 
 								// Show main, article.
 									$main.show();
@@ -228,6 +220,8 @@
 							// Show footer, header.
 								$footer.show();
 								$header.show();
+								picture.show();
+    							title.show();
 
 							// Unmark as visible.
 								$body.removeClass('is-article-visible');
@@ -263,6 +257,8 @@
 						// Show footer, header.
 							$footer.show();
 							$header.show();
+							picture.show();
+							title.show();
 
 						// Unmark as visible.
 							setTimeout(function() {
@@ -298,14 +294,9 @@
 
 			});
 
-		// Events.
-			$body.on('click', function(event) {
+		
 
-				// Article visible? Hide.
-					if ($body.hasClass('is-article-visible'))
-						$main._hide(true);
-
-			});
+			
 
 			$window.on('keyup', function(event) {
 
