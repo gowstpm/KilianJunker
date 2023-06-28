@@ -645,7 +645,7 @@ input, select, textarea {
 		}
 
 		50% {
-			left: 2rem;
+			left: 5rem;
 		}
 
 		100% {
@@ -1469,7 +1469,7 @@ input, select, textarea {
 			border: 2px solid;
 			border-radius: 40px 20px;
 			transition: padding 1s;
-			
+			margin-bottom: 5rem;
 		}
 
 		.picture:hover {
