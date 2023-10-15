@@ -41,6 +41,21 @@ blockquote, q {
 		content: none;
 	}
 
+html, body {
+	user-scalable: no;
+	touch-action: pan-y;
+	user-scalable: no;
+  	touch-zooming: none;
+  	-ms-content-zooming: none;
+  	-ms-touch-action: pan-y;
+	width: 100%;
+	height: 100%;
+	user-scalable: noN;
+	touch-zooming: none;
+}
+#header, #menu, #content {
+	position: fixed;
+  }
 .main {
 	animation: trasntionin 0.75;
 }
@@ -1454,12 +1469,6 @@ input, select, textarea {
 			padding-bottom: 5px;
 			border: none;
 		}
-		
-
-		.title {
-			margin-bottom: 8rem;
-			margin-left: -20rem;
-		}
 
 		.picture {
 			position: relative;
@@ -1502,11 +1511,9 @@ input, select, textarea {
 			}
 
 			.textquisuisje {
-				margin-top: 20px;
+				position: relative;
 				color: rgba(129, 174, 218, 0.84);
 				font-size: 50px;
-				width: 750px;
-				height: 100px;
 				animation: 5s infinite ease-in-out;
 			}
 
@@ -1526,8 +1533,8 @@ input, select, textarea {
 			
 			.title {
 				position: relative;
+				top: 5svh;
 				font-size: 80px;
-				margin-bottom: 23rem;
 				transition: font-size 2s ease-in-out;
 			}
 
