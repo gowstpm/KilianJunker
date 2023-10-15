@@ -9,6 +9,7 @@
 		$main_articles = $main.children('article');
 		picture = $('.picture')
 		title = $('.title')
+		title2 = $('.textquisuisje')
 
 	// Breakpoints.
 		breakpoints({
@@ -85,6 +86,7 @@
 								$footer.hide();
 								picture.hide();
     							title.hide();
+								title2.hide();
 
 							// Show main, article.
 								$main.show();
@@ -161,6 +163,7 @@
 									$footer.hide();
 									picture.hide();
     								title.hide();
+									title2.hide();
 
 								// Show main, article.
 									$main.show();
@@ -222,6 +225,7 @@
 								$header.show();
 								picture.show();
     							title.show();
+								title2.show();
 
 							// Unmark as visible.
 								$body.removeClass('is-article-visible');
@@ -259,6 +263,7 @@
 							$header.show();
 							picture.show();
 							title.show();
+							title2.show();
 
 						// Unmark as visible.
 							setTimeout(function() {
